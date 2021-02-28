@@ -13,8 +13,11 @@ def requestResults(name):
     # get the prediction
     tweets['prediction'] = pipeline.predict(tweets['tweet_text'])
     # get the value counts of different labels predicted
+    tweets_hate = tweets[tweets['prediction'] == 1]
+
     data = str(tweets.prediction.value_counts()) + '\n\n'
-    return data + str(tweets)
+    #print(tweets.columns)
+    return data + "Hateful Tweets: \n" + str(tweets_hate.tweet_text) + '\n\n' + str(tweets.drop(columns = [tweet_id]))
 
 
 # start flask

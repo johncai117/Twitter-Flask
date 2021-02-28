@@ -34,3 +34,7 @@ def get_related_tweets(text_query):
     except BaseException as e:
         print('failed on_status,', str(e))
         time.sleep(3)
+
+if __name__ == "__main__":
+    tweets = get_related_tweets("Donald Trump")
+    
