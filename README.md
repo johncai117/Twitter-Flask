@@ -3,7 +3,7 @@ Deploying Hate Speech Detection model on Retrieved Tweets using Flask
 
 This repo is to brush up the semantics of Flask, and to deploy an NLP model. The work here is based on the repo: https://github.com/lakshay-arora/Hate-Speech-Classification-deployed-using-Flask/tree/master
 
-Note that you will need to set up a config.py file with the relevant Twitter API keys. 
+Note that you will need to set up a config.py file with the relevant Twitter API keys. You need to sign up for a Twitter developer account, and then obtain your own API keys.
 
 ## Deployment
 
