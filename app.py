@@ -16,8 +16,8 @@ def requestResults(name):
     tweets_hate = tweets[tweets['prediction'] == 1]
 
     data = str(tweets.prediction.value_counts()) + '\n\n'
-    #print(tweets.columns)
-    return data + "Hateful Tweets: \n" + str(tweets_hate.tweet_text) + '\n\n' + str(tweets.drop(columns = [tweet_id]))
+    #p
+    return data + "Hateful Tweets: \n" + str(tweets_hate.tweet_text) + '\n\n' + str(tweets[["tweet_text", "prediction"]])
 
 
 # start flask
